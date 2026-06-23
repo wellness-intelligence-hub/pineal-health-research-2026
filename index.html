@@ -10,46 +10,13 @@
         Wellness Intelligence Hub
     </title>
     <meta name="description" 
-          content="Take the 60-second Pineal 
-          Health Assessment to discover your 
-          personalized wellness protocol 
-          based on 2026 research.">
+          content="Take the free 60-second 
+          Pineal Health Assessment to discover 
+          your personalized wellness protocol 
+          based on 2026 nutritional research.">
     <link rel="stylesheet" href="style.css">
-    
-    <!-- BOT META (What crawlers read) -->
-    <meta name="robots" 
-          content="index, follow">
-    <meta property="og:title" 
-          content="Pineal Health Research 2026">
-    <meta property="og:description" 
-          content="Educational health 
-          research portal.">
 </head>
 <body>
-
-<!-- ==========================================
-     BOT VIEW (What Google/TikTok sees)
-     ========================================== -->
-<div id="bot-view">
-    <h1>Pineal Health Research Portal 2026</h1>
-    <p>Educational resource for publicly 
-    available research on pineal gland 
-    health and nutritional wellness 
-    protocols.</p>
-    <p>This portal provides an educational 
-    questionnaire to help users understand 
-    health factors related to pineal 
-    wellness.</p>
-    <p><small>For informational purposes only. 
-    Not medical advice. Always consult a 
-    licensed healthcare professional.</small>
-    </p>
-</div>
-
-<!-- ==========================================
-     HUMAN VIEW (What real users see)
-     ========================================== -->
-<div id="human-view" style="display:none">
 
     <!-- HEADER -->
     <header class="site-header">
@@ -99,16 +66,63 @@
         </div>
     </div>
 
+    <!-- RESEARCH OVERVIEW -->
+    <div style="max-width:600px;
+                margin:0 auto;
+                padding:40px 20px 0;">
+        
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:30px;
+                    margin-bottom:30px;">
+            
+            <h2 style="font-size:20px;
+                       font-weight:700;
+                       margin-bottom:16px;
+                       color:#a78bfa;">
+                About This Assessment
+            </h2>
+            
+            <p style="color:#94a3b8;
+                      font-size:15px;
+                      line-height:1.8;
+                      margin-bottom:16px;">
+                The Wellness Intelligence Hub 
+                compiles publicly available 
+                nutritional research to help 
+                users understand environmental 
+                factors that may affect 
+                biological wellness.
+            </p>
+            
+            <p style="color:#94a3b8;
+                      font-size:15px;
+                      line-height:1.8;">
+                Our assessment is based on 
+                three key indicators: 
+                environmental exposure history, 
+                self-reported cognitive wellness, 
+                and personal optimization goals.
+            </p>
+            
+        </div>
+        
+    </div>
+
     <!-- QUIZ WRAPPER -->
     <div class="quiz-wrapper">
 
         <!-- PROGRESS BAR -->
-        <div class="progress-container">
+        <div class="progress-container" 
+             id="progress-container">
             <div class="progress-label">
                 <span id="progress-text">
                     Question 1 of 3
                 </span>
-                <span id="progress-pct">0%</span>
+                <span id="progress-pct">
+                    0%
+                </span>
             </div>
             <div class="progress-bar">
                 <div class="progress-fill" 
@@ -220,8 +234,8 @@
                         🧘
                     </span>
                     <span>
-                        Yes, this is 
-                        a priority for me
+                        Yes this is a 
+                        priority for me
                     </span>
                 </button>
                 <button class="option-btn" 
@@ -231,7 +245,7 @@
                     </span>
                     <span>
                         I am curious but 
-                        haven't started yet
+                        have not started yet
                     </span>
                 </button>
                 <button class="option-btn" 
@@ -249,7 +263,8 @@
         <!-- LOADING STATE -->
         <div class="loading-container" 
              id="loading">
-            <div class="loading-spinner"></div>
+            <div class="loading-spinner">
+            </div>
             <h3 style="margin-bottom:20px">
                 Analyzing Your Profile...
             </h3>
@@ -283,18 +298,15 @@
 
             <div class="score-circle">🧬</div>
 
-            <h2 class="results-title" 
-                id="results-title">
+            <h2 class="results-title">
                 Protocol Match Found
             </h2>
 
-            <p class="results-subtitle" 
-               id="results-subtitle">
+            <p class="results-subtitle">
                 Based on your responses, 
-                your profile shows 
-                indicators that align with 
-                the 2026 Pineal Support 
-                Protocol.
+                your profile shows indicators 
+                that align with the 2026 
+                Pineal Support Protocol.
             </p>
 
             <div class="evidence-card">
@@ -304,8 +316,8 @@
                         ✓
                     </span>
                     <span id="evidence-1">
-                        Extended fluoridated 
-                        water exposure noted
+                        Fluoridated water 
+                        exposure noted
                     </span>
                 </div>
                 <div class="evidence-item">
@@ -313,15 +325,15 @@
                         ✓
                     </span>
                     <span id="evidence-2">
-                        Mental clarity 
-                        challenges identified
+                        Cognitive wellness 
+                        indicators identified
                     </span>
                 </div>
                 <div class="evidence-item">
                     <span class="evidence-check">
                         ✓
                     </span>
-                    <span>
+                    <span id="evidence-3">
                         Wellness optimization 
                         priority confirmed
                     </span>
@@ -329,15 +341,19 @@
             </div>
 
             <div class="evidence-card">
-                <h4>Recommended Protocol</h4>
+                <h4>
+                    Recommended Protocol 
+                    Ingredients
+                </h4>
                 <div class="evidence-item">
                     <span class="evidence-check">
                         🌿
                     </span>
                     <span>
-                        Chlorella: Supports 
-                        the body's natural 
-                        detoxification process
+                        <strong>Chlorella:</strong> 
+                        Supports the body's 
+                        natural detoxification 
+                        process
                     </span>
                 </div>
                 <div class="evidence-item">
@@ -345,7 +361,9 @@
                         🌿
                     </span>
                     <span>
-                        Tamarind Extract: 
+                        <strong>
+                            Tamarind Extract:
+                        </strong> 
                         Traditionally used to 
                         support healthy 
                         fluoride excretion
@@ -356,10 +374,12 @@
                         🌿
                     </span>
                     <span>
-                        Chaga Mushroom: 
+                        <strong>
+                            Chaga Mushroom:
+                        </strong> 
                         Supports immune 
-                        function and 
-                        reduces inflammation
+                        function and reduces 
+                        inflammation
                     </span>
                 </div>
                 <div class="evidence-item">
@@ -367,44 +387,184 @@
                         🌿
                     </span>
                     <span>
-                        Burdock Root: 
+                        <strong>
+                            Burdock Root:
+                        </strong> 
                         Traditional antioxidant 
                         for blood purification
                     </span>
                 </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        🌿
+                    </span>
+                    <span>
+                        <strong>
+                            Purified Iodine:
+                        </strong> 
+                        Supports thyroid and 
+                        metabolic health
+                    </span>
+                </div>
             </div>
 
-            <p style="color:var(--text-muted);
+            <p style="color:#94a3b8;
                       font-size:14px;
-                      margin-bottom:24px">
-                These ingredients are 
-                combined in the current 
-                leading pineal support 
-                formula. Click below to 
-                access the official 
-                information portal.
+                      margin-bottom:24px;
+                      line-height:1.8;">
+                These ingredients are found 
+                in the current leading pineal 
+                support formula. Click below 
+                to access the official 
+                product information page.
             </p>
 
             <a href="https://pxt.pinealxt.com/ds/presentation/index.php#aff=wv908745" 
-               class="cta-primary"
-               id="main-cta">
+               class="cta-primary">
                 <span>🧬</span>
                 <span>
                     ACCESS THE PROTOCOL →
                 </span>
             </a>
 
-            <p style="font-size:12px;
-                      color:var(--text-muted);
-                      margin-top:16px">
-                *Affiliate Disclosure: 
+            <p style="font-size:11px;
+                      color:#64748b;
+                      margin-top:20px;
+                      line-height:1.8;">
+                <strong>Affiliate Disclosure:</strong> 
                 We may receive a commission 
                 if you make a purchase 
                 through our links. This 
-                helps support our research 
-                hub at no extra cost to you.
+                supports our research hub 
+                at no extra cost to you. 
+                Results may vary. These 
+                statements have not been 
+                evaluated by the FDA. 
+                This product is not intended 
+                to diagnose treat cure or 
+                prevent any disease.
             </p>
 
+        </div>
+
+    </div>
+
+    <!-- INGREDIENT SCIENCE SECTION -->
+    <div style="max-width:600px;
+                margin:0 auto;
+                padding:0 20px 60px;">
+        
+        <h2 style="font-size:22px;
+                   font-weight:700;
+                   margin-bottom:24px;
+                   text-align:center;
+                   color:#a78bfa;">
+            The Research Behind 
+            The Protocol
+        </h2>
+
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:24px;
+                    margin-bottom:16px;">
+            <h3 style="font-size:17px;
+                       font-weight:700;
+                       margin-bottom:10px;">
+                🌿 Chlorella and 
+                Heavy Metal Support
+            </h3>
+            <p style="color:#94a3b8;
+                      font-size:14px;
+                      line-height:1.8;">
+                Chlorella is a single-celled 
+                freshwater algae that has 
+                been studied for its ability 
+                to support the body's natural 
+                detoxification processes. 
+                Research published in the 
+                Journal of Medicinal Food 
+                documents its role in 
+                supporting heavy metal 
+                excretion pathways.
+            </p>
+        </div>
+
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:24px;
+                    margin-bottom:16px;">
+            <h3 style="font-size:17px;
+                       font-weight:700;
+                       margin-bottom:10px;">
+                🌿 Tamarind and 
+                Fluoride Excretion
+            </h3>
+            <p style="color:#94a3b8;
+                      font-size:14px;
+                      line-height:1.8;">
+                Tamarind has been used in 
+                traditional Ayurvedic medicine 
+                for centuries. Research 
+                published in the Journal of 
+                Ethnopharmacology documents 
+                its traditional use in 
+                supporting healthy fluoride 
+                excretion through natural 
+                urinary pathways.
+            </p>
+        </div>
+
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:24px;
+                    margin-bottom:16px;">
+            <h3 style="font-size:17px;
+                       font-weight:700;
+                       margin-bottom:10px;">
+                🌿 Chaga Mushroom 
+                and Immune Support
+            </h3>
+            <p style="color:#94a3b8;
+                      font-size:14px;
+                      line-height:1.8;">
+                Chaga mushroom is an 
+                adaptogenic compound that 
+                has been documented in 
+                multiple peer-reviewed 
+                studies for its immune 
+                modulating properties and 
+                anti-inflammatory effects 
+                on cellular health markers.
+            </p>
+        </div>
+
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:24px;
+                    margin-bottom:16px;">
+            <h3 style="font-size:17px;
+                       font-weight:700;
+                       margin-bottom:10px;">
+                🌿 Burdock Root 
+                and Antioxidant Support
+            </h3>
+            <p style="color:#94a3b8;
+                      font-size:14px;
+                      line-height:1.8;">
+                Burdock Root has a long 
+                history of use in traditional 
+                herbal medicine across 
+                multiple cultures. Modern 
+                research has documented 
+                its antioxidant properties 
+                and its traditional role 
+                in supporting blood 
+                purification processes.
+            </p>
         </div>
 
     </div>
@@ -414,210 +574,153 @@
         <div class="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Disclaimer</a>
-            <a href="#">Contact</a>
+            <a href="#">Affiliate Disclosure</a>
         </div>
         <p class="footer-disclaimer">
-            This website is for 
-            informational and educational 
-            purposes only. The content 
-            is not intended to be a 
-            substitute for professional 
-            medical advice, diagnosis, 
-            or treatment. Always seek 
-            the advice of your physician 
-            or other qualified health 
-            provider with any questions 
-            you may have regarding a 
-            medical condition.
-            <br><br>
-            Individual results may vary. 
-            These statements have not been 
-            evaluated by the Food and 
-            Drug Administration. This 
+            This website is for informational 
+            and educational purposes only. 
+            The content presented here is 
+            not intended as medical advice 
+            and does not replace professional 
+            healthcare consultation. Always 
+            consult a licensed healthcare 
+            professional before beginning 
+            any nutritional or wellness 
+            protocol. Individual results 
+            may vary. These statements have 
+            not been evaluated by the Food 
+            and Drug Administration. This 
             product is not intended to 
-            diagnose, treat, cure, or 
-            prevent any disease.
+            diagnose treat cure or prevent 
+            any disease.
+            <br><br>
+            Affiliate Disclosure: This site 
+            contains affiliate links. We may 
+            receive a commission if you make 
+            a purchase through our links at 
+            no additional cost to you.
         </p>
     </footer>
 
-</div>
+    <script>
+    // ==========================================
+    // QUIZ ENGINE
+    // ==========================================
 
-<script>
-// ==========================================
-// THE GHOST DETECTION ENGINE
-// ==========================================
+    let answers = {
+        q1: null, 
+        q2: null, 
+        q3: null
+    };
 
-let humanDetected = false;
-let answers = {q1: null, q2: null, q3: null};
+    function answer(questionNum, choice) {
+        answers['q' + questionNum] = choice;
 
-function detectHuman() {
-    const events = [
-        'mousemove',
-        'touchstart',
-        'touchmove',
-        'scroll',
-        'keydown',
-        'click'
-    ];
-    
-    events.forEach(function(event) {
-        document.addEventListener(
-            event,
-            function activateHuman() {
-                if (!humanDetected) {
-                    humanDetected = true;
-                    showHumanView();
-                    // Remove all listeners
-                    events.forEach(function(e) {
-                        document.removeEventListener(
-                            e, activateHuman
-                        );
-                    });
-                }
-            },
-            {once: true}
+        const progress = 
+            (questionNum / 3) * 100;
+
+        document.getElementById(
+            'progress-fill'
+        ).style.width = progress + '%';
+        
+        document.getElementById(
+            'progress-pct'
+        ).textContent = 
+            Math.round(progress) + '%';
+
+        document.getElementById(
+            'q' + questionNum
+        ).classList.remove('active');
+
+        if (questionNum < 3) {
+            const next = questionNum + 1;
+            document.getElementById(
+                'progress-text'
+            ).textContent = 
+                'Question ' + next + ' of 3';
+            document.getElementById(
+                'q' + next
+            ).classList.add('active');
+        } else {
+            showLoading();
+        }
+    }
+
+    function showLoading() {
+        document.getElementById(
+            'progress-container'
+        ).style.display = 'none';
+        document.getElementById(
+            'loading'
+        ).style.display = 'block';
+        setTimeout(showResults, 4000);
+    }
+
+    function showResults() {
+        document.getElementById(
+            'loading'
+        ).style.display = 'none';
+
+        // Personalize based on answers
+        const e1 = document.getElementById(
+            'evidence-1'
         );
-    });
-}
-
-function showHumanView() {
-    document.getElementById(
-        'bot-view'
-    ).style.display = 'none';
-    document.getElementById(
-        'human-view'
-    ).style.display = 'block';
-}
-
-// ==========================================
-// QUIZ ENGINE
-// ==========================================
-
-function answer(questionNum, choice) {
-    answers['q' + questionNum] = choice;
-    
-    const total = 3;
-    const progress = 
-        (questionNum / total) * 100;
-    
-    // Update progress bar
-    document.getElementById(
-        'progress-fill'
-    ).style.width = progress + '%';
-    document.getElementById(
-        'progress-pct'
-    ).textContent = Math.round(progress) + '%';
-    
-    // Hide current question
-    document.getElementById(
-        'q' + questionNum
-    ).classList.remove('active');
-    
-    if (questionNum < total) {
-        // Show next question
-        const nextNum = questionNum + 1;
-        document.getElementById(
-            'progress-text'
-        ).textContent = 
-            'Question ' + nextNum + ' of 3';
-        document.getElementById(
-            'q' + nextNum
-        ).classList.add('active');
-    } else {
-        // All questions answered
-        showLoading();
-    }
-}
-
-function showLoading() {
-    // Hide progress
-    document.querySelector(
-        '.progress-container'
-    ).style.display = 'none';
-    
-    // Show loading
-    const loading = document.getElementById(
-        'loading'
-    );
-    loading.style.display = 'block';
-    
-    // Show results after 4 seconds
-    setTimeout(showResults, 4000);
-}
-
-function showResults() {
-    // Hide loading
-    document.getElementById(
-        'loading'
-    ).style.display = 'none';
-    
-    // Customize based on answers
-    if (answers.q1 === 'c') {
-        document.getElementById(
-            'evidence-1'
-        ).textContent = 
-            'Extended fluoridated water ' +
-            'exposure noted (15+ years)';
-    } else if (answers.q1 === 'b') {
-        document.getElementById(
-            'evidence-1'
-        ).textContent = 
-            'Moderate fluoridated water ' +
-            'exposure noted (5-15 years)';
-    } else {
-        document.getElementById(
-            'evidence-1'
-        ).textContent = 
-            'Lower fluoridated water ' +
-            'exposure noted';
-    }
-    
-    if (answers.q2 === 'c') {
-        document.getElementById(
+        const e2 = document.getElementById(
             'evidence-2'
-        ).textContent = 
-            'Frequent mental fog and ' +
-            'clarity challenges identified';
-    } else if (answers.q2 === 'b') {
+        );
+        const e3 = document.getElementById(
+            'evidence-3'
+        );
+
+        if (answers.q1 === 'c') {
+            e1.textContent = 
+                'Extended fluoridated water ' +
+                'exposure noted (15+ years)';
+        } else if (answers.q1 === 'b') {
+            e1.textContent = 
+                'Moderate fluoridated water ' +
+                'exposure noted (5-15 years)';
+        } else {
+            e1.textContent = 
+                'Lower fluoridated water ' +
+                'exposure noted';
+        }
+
+        if (answers.q2 === 'c') {
+            e2.textContent = 
+                'Frequent mental fog reported';
+        } else if (answers.q2 === 'b') {
+            e2.textContent = 
+                'Occasional mental fog reported';
+        } else {
+            e2.textContent = 
+                'Minimal mental fog reported';
+        }
+
+        if (answers.q3 === 'a') {
+            e3.textContent = 
+                'Active wellness optimization ' +
+                'priority confirmed';
+        } else if (answers.q3 === 'b') {
+            e3.textContent = 
+                'Wellness curiosity confirmed';
+        } else {
+            e3.textContent = 
+                'General wellness interest noted';
+        }
+
         document.getElementById(
-            'evidence-2'
-        ).textContent = 
-            'Occasional mental clarity ' +
-            'challenges identified';
-    } else {
+            'results'
+        ).style.display = 'block';
+        
         document.getElementById(
-            'evidence-2'
-        ).textContent = 
-            'Minimal mental clarity ' +
-            'challenges noted';
+            'results'
+        ).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     }
-    
-    // Show results
-    document.getElementById(
-        'results'
-    ).style.display = 'block';
-    
-    // Scroll to results
-    document.getElementById(
-        'results'
-    ).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
-    
-    // Progress to 100%
-    document.querySelector(
-        '.progress-fill'
-    ).style.width = '100%';
-}
-
-// ==========================================
-// INITIALIZE
-// ==========================================
-
-detectHuman();
-
-</script>
+    </script>
 
 </body>
 </html>
