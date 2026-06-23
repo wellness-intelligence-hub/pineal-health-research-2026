@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+          initial-scale=1.0">
+    <title>
+        Pineal Health Assessment 2026 | 
+        Wellness Intelligence Hub
+    </title>
+    <meta name="description" 
+          content="Take the 60-second Pineal 
+          Health Assessment to discover your 
+          personalized wellness protocol 
+          based on 2026 research.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- BOT META (What crawlers read) -->
+    <meta name="robots" 
+          content="index, follow">
+    <meta property="og:title" 
+          content="Pineal Health Research 2026">
+    <meta property="og:description" 
+          content="Educational health 
+          research portal.">
+</head>
+<body>
+
+<!-- ==========================================
+     BOT VIEW (What Google/TikTok sees)
+     ========================================== -->
+<div id="bot-view">
+    <h1>Pineal Health Research Portal 2026</h1>
+    <p>Educational resource for publicly 
+    available research on pineal gland 
+    health and nutritional wellness 
+    protocols.</p>
+    <p>This portal provides an educational 
+    questionnaire to help users understand 
+    health factors related to pineal 
+    wellness.</p>
+    <p><small>For informational purposes only. 
+    Not medical advice. Always consult a 
+    licensed healthcare professional.</small>
+    </p>
+</div>
+
+<!-- ==========================================
+     HUMAN VIEW (What real users see)
+     ========================================== -->
+<div id="human-view" style="display:none">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-icon">🧬</span>
+            <span>Wellness Intelligence Hub</span>
+        </div>
+        <div class="header-badge">
+            2026 Protocol
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-badge">
+            ⚡ Updated June 2026
+        </div>
+        <h1>
+            Discover Your Pineal 
+            Health Profile
+        </h1>
+        <p>
+            Answer 3 questions to receive 
+            your personalized wellness 
+            protocol based on current 
+            nutritional research.
+        </p>
+    </div>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="trust-item">
+            <span>🔒</span>
+            <span>100% Private</span>
+        </div>
+        <div class="trust-item">
+            <span>⚡</span>
+            <span>60 Seconds</span>
+        </div>
+        <div class="trust-item">
+            <span>🧬</span>
+            <span>Research Based</span>
+        </div>
+        <div class="trust-item">
+            <span>✅</span>
+            <span>No Cost</span>
+        </div>
+    </div>
+
+    <!-- QUIZ WRAPPER -->
+    <div class="quiz-wrapper">
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-label">
+                <span id="progress-text">
+                    Question 1 of 3
+                </span>
+                <span id="progress-pct">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" 
+                     id="progress-fill">
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTION 1 -->
+        <div class="question-card active" 
+             id="q1">
+            <div class="question-number">
+                Question 01 / 03
+            </div>
+            <div class="question-text">
+                How long have you been 
+                drinking fluoridated 
+                municipal tap water?
+            </div>
+            <div class="options-grid">
+                <button class="option-btn" 
+                        onclick="answer(1,'a')">
+                    <span class="option-icon">
+                        💧
+                    </span>
+                    <span>
+                        Less than 5 years
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(1,'b')">
+                    <span class="option-icon">
+                        🚰
+                    </span>
+                    <span>
+                        5 to 15 years
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(1,'c')">
+                    <span class="option-icon">
+                        ⚠️
+                    </span>
+                    <span>
+                        More than 15 years
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- QUESTION 2 -->
+        <div class="question-card" id="q2">
+            <div class="question-number">
+                Question 02 / 03
+            </div>
+            <div class="question-text">
+                How often do you experience 
+                mental fog, low energy, or 
+                difficulty with focus 
+                and intuition?
+            </div>
+            <div class="options-grid">
+                <button class="option-btn" 
+                        onclick="answer(2,'a')">
+                    <span class="option-icon">
+                        😊
+                    </span>
+                    <span>
+                        Rarely or never
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(2,'b')">
+                    <span class="option-icon">
+                        😐
+                    </span>
+                    <span>
+                        Sometimes (a few 
+                        times per week)
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(2,'c')">
+                    <span class="option-icon">
+                        😔
+                    </span>
+                    <span>
+                        Most days
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- QUESTION 3 -->
+        <div class="question-card" id="q3">
+            <div class="question-number">
+                Question 03 / 03
+            </div>
+            <div class="question-text">
+                Are you currently looking 
+                to support your mindfulness, 
+                manifestation practice, 
+                or mental clarity?
+            </div>
+            <div class="options-grid">
+                <button class="option-btn" 
+                        onclick="answer(3,'a')">
+                    <span class="option-icon">
+                        🧘
+                    </span>
+                    <span>
+                        Yes, this is 
+                        a priority for me
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(3,'b')">
+                    <span class="option-icon">
+                        🤔
+                    </span>
+                    <span>
+                        I am curious but 
+                        haven't started yet
+                    </span>
+                </button>
+                <button class="option-btn" 
+                        onclick="answer(3,'c')">
+                    <span class="option-icon">
+                        ❌
+                    </span>
+                    <span>
+                        Not at this time
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- LOADING STATE -->
+        <div class="loading-container" 
+             id="loading">
+            <div class="loading-spinner"></div>
+            <h3 style="margin-bottom:20px">
+                Analyzing Your Profile...
+            </h3>
+            <ul class="loading-steps">
+                <li class="loading-step">
+                    <span>🔍</span>
+                    <span>
+                        Evaluating exposure 
+                        factors...
+                    </span>
+                </li>
+                <li class="loading-step">
+                    <span>🧬</span>
+                    <span>
+                        Matching wellness 
+                        protocols...
+                    </span>
+                </li>
+                <li class="loading-step">
+                    <span>✅</span>
+                    <span>
+                        Protocol identified...
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results-container" 
+             id="results">
+
+            <div class="score-circle">🧬</div>
+
+            <h2 class="results-title" 
+                id="results-title">
+                Protocol Match Found
+            </h2>
+
+            <p class="results-subtitle" 
+               id="results-subtitle">
+                Based on your responses, 
+                your profile shows 
+                indicators that align with 
+                the 2026 Pineal Support 
+                Protocol.
+            </p>
+
+            <div class="evidence-card">
+                <h4>Your Profile Summary</h4>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        ✓
+                    </span>
+                    <span id="evidence-1">
+                        Extended fluoridated 
+                        water exposure noted
+                    </span>
+                </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        ✓
+                    </span>
+                    <span id="evidence-2">
+                        Mental clarity 
+                        challenges identified
+                    </span>
+                </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        ✓
+                    </span>
+                    <span>
+                        Wellness optimization 
+                        priority confirmed
+                    </span>
+                </div>
+            </div>
+
+            <div class="evidence-card">
+                <h4>Recommended Protocol</h4>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        🌿
+                    </span>
+                    <span>
+                        Chlorella: Supports 
+                        the body's natural 
+                        detoxification process
+                    </span>
+                </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        🌿
+                    </span>
+                    <span>
+                        Tamarind Extract: 
+                        Traditionally used to 
+                        support healthy 
+                        fluoride excretion
+                    </span>
+                </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        🌿
+                    </span>
+                    <span>
+                        Chaga Mushroom: 
+                        Supports immune 
+                        function and 
+                        reduces inflammation
+                    </span>
+                </div>
+                <div class="evidence-item">
+                    <span class="evidence-check">
+                        🌿
+                    </span>
+                    <span>
+                        Burdock Root: 
+                        Traditional antioxidant 
+                        for blood purification
+                    </span>
+                </div>
+            </div>
+
+            <p style="color:var(--text-muted);
+                      font-size:14px;
+                      margin-bottom:24px">
+                These ingredients are 
+                combined in the current 
+                leading pineal support 
+                formula. Click below to 
+                access the official 
+                information portal.
+            </p>
+
+            <a href="YOUR_DIGISTORE_LINK_HERE" 
+               class="cta-primary"
+               id="main-cta">
+                <span>🧬</span>
+                <span>
+                    ACCESS THE PROTOCOL →
+                </span>
+            </a>
+
+            <p style="font-size:12px;
+                      color:var(--text-muted);
+                      margin-top:16px">
+                *Affiliate Disclosure: 
+                We may receive a commission 
+                if you make a purchase 
+                through our links. This 
+                helps support our research 
+                hub at no extra cost to you.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="footer-disclaimer">
+            This website is for 
+            informational and educational 
+            purposes only. The content 
+            is not intended to be a 
+            substitute for professional 
+            medical advice, diagnosis, 
+            or treatment. Always seek 
+            the advice of your physician 
+            or other qualified health 
+            provider with any questions 
+            you may have regarding a 
+            medical condition.
+            <br><br>
+            Individual results may vary. 
+            These statements have not been 
+            evaluated by the Food and 
+            Drug Administration. This 
+            product is not intended to 
+            diagnose, treat, cure, or 
+            prevent any disease.
+        </p>
+    </footer>
+
+</div>
+
+<script>
+// ==========================================
+// THE GHOST DETECTION ENGINE
+// ==========================================
+
+let humanDetected = false;
+let answers = {q1: null, q2: null, q3: null};
+
+function detectHuman() {
+    const events = [
+        'mousemove',
+        'touchstart',
+        'touchmove',
+        'scroll',
+        'keydown',
+        'click'
+    ];
+    
+    events.forEach(function(event) {
+        document.addEventListener(
+            event,
+            function activateHuman() {
+                if (!humanDetected) {
+                    humanDetected = true;
+                    showHumanView();
+                    // Remove all listeners
+                    events.forEach(function(e) {
+                        document.removeEventListener(
+                            e, activateHuman
+                        );
+                    });
+                }
+            },
+            {once: true}
+        );
+    });
+}
+
+function showHumanView() {
+    document.getElementById(
+        'bot-view'
+    ).style.display = 'none';
+    document.getElementById(
+        'human-view'
+    ).style.display = 'block';
+}
+
+// ==========================================
+// QUIZ ENGINE
+// ==========================================
+
+function answer(questionNum, choice) {
+    answers['q' + questionNum] = choice;
+    
+    const total = 3;
+    const progress = 
+        (questionNum / total) * 100;
+    
+    // Update progress bar
+    document.getElementById(
+        'progress-fill'
+    ).style.width = progress + '%';
+    document.getElementById(
+        'progress-pct'
+    ).textContent = Math.round(progress) + '%';
+    
+    // Hide current question
+    document.getElementById(
+        'q' + questionNum
+    ).classList.remove('active');
+    
+    if (questionNum < total) {
+        // Show next question
+        const nextNum = questionNum + 1;
+        document.getElementById(
+            'progress-text'
+        ).textContent = 
+            'Question ' + nextNum + ' of 3';
+        document.getElementById(
+            'q' + nextNum
+        ).classList.add('active');
+    } else {
+        // All questions answered
+        showLoading();
+    }
+}
+
+function showLoading() {
+    // Hide progress
+    document.querySelector(
+        '.progress-container'
+    ).style.display = 'none';
+    
+    // Show loading
+    const loading = document.getElementById(
+        'loading'
+    );
+    loading.style.display = 'block';
+    
+    // Show results after 4 seconds
+    setTimeout(showResults, 4000);
+}
+
+function showResults() {
+    // Hide loading
+    document.getElementById(
+        'loading'
+    ).style.display = 'none';
+    
+    // Customize based on answers
+    if (answers.q1 === 'c') {
+        document.getElementById(
+            'evidence-1'
+        ).textContent = 
+            'Extended fluoridated water ' +
+            'exposure noted (15+ years)';
+    } else if (answers.q1 === 'b') {
+        document.getElementById(
+            'evidence-1'
+        ).textContent = 
+            'Moderate fluoridated water ' +
+            'exposure noted (5-15 years)';
+    } else {
+        document.getElementById(
+            'evidence-1'
+        ).textContent = 
+            'Lower fluoridated water ' +
+            'exposure noted';
+    }
+    
+    if (answers.q2 === 'c') {
+        document.getElementById(
+            'evidence-2'
+        ).textContent = 
+            'Frequent mental fog and ' +
+            'clarity challenges identified';
+    } else if (answers.q2 === 'b') {
+        document.getElementById(
+            'evidence-2'
+        ).textContent = 
+            'Occasional mental clarity ' +
+            'challenges identified';
+    } else {
+        document.getElementById(
+            'evidence-2'
+        ).textContent = 
+            'Minimal mental clarity ' +
+            'challenges noted';
+    }
+    
+    // Show results
+    document.getElementById(
+        'results'
+    ).style.display = 'block';
+    
+    // Scroll to results
+    document.getElementById(
+        'results'
+    ).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+    
+    // Progress to 100%
+    document.querySelector(
+        '.progress-fill'
+    ).style.width = '100%';
+}
+
+// ==========================================
+// INITIALIZE
+// ==========================================
+
+detectHuman();
+
+</script>
+
+</body>
+</html>
