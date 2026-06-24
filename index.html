@@ -66,24 +66,21 @@
         </div>
     </div>
 
-    <!-- RESEARCH OVERVIEW -->
+    <!-- ABOUT SECTION -->
     <div style="max-width:600px;
                 margin:0 auto;
                 padding:40px 20px 0;">
-        
         <div style="background:#13131a;
                     border:1px solid #2d2d3d;
                     border-radius:16px;
                     padding:30px;
                     margin-bottom:30px;">
-            
             <h2 style="font-size:20px;
                        font-weight:700;
                        margin-bottom:16px;
                        color:#a78bfa;">
                 About This Assessment
             </h2>
-            
             <p style="color:#94a3b8;
                       font-size:15px;
                       line-height:1.8;
@@ -95,7 +92,6 @@
                 factors that may affect 
                 biological wellness.
             </p>
-            
             <p style="color:#94a3b8;
                       font-size:15px;
                       line-height:1.8;">
@@ -105,9 +101,7 @@
                 self-reported cognitive wellness, 
                 and personal optimization goals.
             </p>
-            
         </div>
-        
     </div>
 
     <!-- QUIZ WRAPPER -->
@@ -200,8 +194,8 @@
                         😐
                     </span>
                     <span>
-                        Sometimes (a few 
-                        times per week)
+                        Sometimes a few 
+                        times per week
                     </span>
                 </button>
                 <button class="option-btn" 
@@ -265,7 +259,8 @@
              id="loading">
             <div class="loading-spinner">
             </div>
-            <h3 style="margin-bottom:20px">
+            <h3 style="margin-bottom:20px;
+                       text-align:center;">
                 Analyzing Your Profile...
             </h3>
             <ul class="loading-steps">
@@ -303,12 +298,13 @@
             </h2>
 
             <p class="results-subtitle">
-                Based on your responses, 
+                Based on your responses 
                 your profile shows indicators 
                 that align with the 2026 
                 Pineal Support Protocol.
             </p>
 
+            <!-- PROFILE SUMMARY -->
             <div class="evidence-card">
                 <h4>Your Profile Summary</h4>
                 <div class="evidence-item">
@@ -340,6 +336,7 @@
                 </div>
             </div>
 
+            <!-- RECOMMENDED PROTOCOL -->
             <div class="evidence-card">
                 <h4>
                     Recommended Protocol 
@@ -408,10 +405,12 @@
                 </div>
             </div>
 
+            <!-- CTA -->
             <p style="color:#94a3b8;
                       font-size:14px;
                       margin-bottom:24px;
-                      line-height:1.8;">
+                      line-height:1.8;
+                      text-align:center;">
                 These ingredients are found 
                 in the current leading pineal 
                 support formula. Click below 
@@ -419,18 +418,22 @@
                 product information page.
             </p>
 
-            <a href="https://pxt.pinealxt.com/ds/presentation/index.php#aff=wv908745" 
-               class="cta-primary">
-                <span>🧬</span>
-                <span>
-                    ACCESS THE PROTOCOL →
-                </span>
-            </a>
+            <div style="text-align:center;">
+                <a href="https://pxt.pinealxt.com/ds/presentation/index.php#aff=wv908745" 
+                   class="cta-primary">
+                    <span>🧬</span>
+                    <span>
+                        ACCESS THE PROTOCOL →
+                    </span>
+                </a>
+            </div>
 
+            <!-- DISCLAIMER -->
             <p style="font-size:11px;
                       color:#64748b;
                       margin-top:20px;
-                      line-height:1.8;">
+                      line-height:1.8;
+                      text-align:center;">
                 <strong>Affiliate Disclosure:</strong> 
                 We may receive a commission 
                 if you make a purchase 
@@ -453,7 +456,7 @@
     <div style="max-width:600px;
                 margin:0 auto;
                 padding:0 20px 60px;">
-        
+
         <h2 style="font-size:22px;
                    font-weight:700;
                    margin-bottom:24px;
@@ -472,12 +475,12 @@
                        font-weight:700;
                        margin-bottom:10px;">
                 🌿 Chlorella and 
-                Heavy Metal Support
+                Detoxification Support
             </h3>
             <p style="color:#94a3b8;
                       font-size:14px;
                       line-height:1.8;">
-                Chlorella is a single-celled 
+                Chlorella is a single celled 
                 freshwater algae that has 
                 been studied for its ability 
                 to support the body's natural 
@@ -499,7 +502,7 @@
                        font-weight:700;
                        margin-bottom:10px;">
                 🌿 Tamarind and 
-                Fluoride Excretion
+                Fluoride Excretion Support
             </h3>
             <p style="color:#94a3b8;
                       font-size:14px;
@@ -533,10 +536,10 @@
                 Chaga mushroom is an 
                 adaptogenic compound that 
                 has been documented in 
-                multiple peer-reviewed 
+                multiple peer reviewed 
                 studies for its immune 
                 modulating properties and 
-                anti-inflammatory effects 
+                anti inflammatory effects 
                 on cellular health markers.
             </p>
         </div>
@@ -564,6 +567,33 @@
                 and its traditional role 
                 in supporting blood 
                 purification processes.
+            </p>
+        </div>
+
+        <div style="background:#13131a;
+                    border:1px solid #2d2d3d;
+                    border-radius:16px;
+                    padding:24px;
+                    margin-bottom:16px;">
+            <h3 style="font-size:17px;
+                       font-weight:700;
+                       margin-bottom:10px;">
+                🌿 Purified Iodine 
+                and Thyroid Support
+            </h3>
+            <p style="color:#94a3b8;
+                      font-size:14px;
+                      line-height:1.8;">
+                Iodine is an essential 
+                mineral that plays a 
+                critical role in thyroid 
+                function and metabolic 
+                health. Purified iodine 
+                supplementation has been 
+                widely studied for its 
+                role in supporting healthy 
+                hormone production and 
+                overall metabolic wellness.
             </p>
         </div>
 
@@ -608,35 +638,40 @@
     // ==========================================
 
     let answers = {
-        q1: null, 
-        q2: null, 
+        q1: null,
+        q2: null,
         q3: null
     };
 
     function answer(questionNum, choice) {
+
+        // Store the answer
         answers['q' + questionNum] = choice;
 
-        const progress = 
+        // Update progress bar
+        const progress =
             (questionNum / 3) * 100;
 
         document.getElementById(
             'progress-fill'
         ).style.width = progress + '%';
-        
+
         document.getElementById(
             'progress-pct'
-        ).textContent = 
+        ).textContent =
             Math.round(progress) + '%';
 
+        // Hide current question
         document.getElementById(
             'q' + questionNum
         ).classList.remove('active');
 
+        // Show next question or results
         if (questionNum < 3) {
             const next = questionNum + 1;
             document.getElementById(
                 'progress-text'
-            ).textContent = 
+            ).textContent =
                 'Question ' + next + ' of 3';
             document.getElementById(
                 'q' + next
@@ -647,21 +682,29 @@
     }
 
     function showLoading() {
+
+        // Hide progress bar
         document.getElementById(
             'progress-container'
         ).style.display = 'none';
+
+        // Show loading animation
         document.getElementById(
             'loading'
         ).style.display = 'block';
+
+        // Show results after 4 seconds
         setTimeout(showResults, 4000);
     }
 
     function showResults() {
+
+        // Hide loading
         document.getElementById(
             'loading'
         ).style.display = 'none';
 
-        // Personalize based on answers
+        // Personalize evidence based on answers
         const e1 = document.getElementById(
             'evidence-1'
         );
@@ -672,47 +715,57 @@
             'evidence-3'
         );
 
+        // Question 1 personalization
         if (answers.q1 === 'c') {
-            e1.textContent = 
+            e1.textContent =
                 'Extended fluoridated water ' +
                 'exposure noted (15+ years)';
         } else if (answers.q1 === 'b') {
-            e1.textContent = 
+            e1.textContent =
                 'Moderate fluoridated water ' +
-                'exposure noted (5-15 years)';
+                'exposure noted (5 to 15 years)';
         } else {
-            e1.textContent = 
+            e1.textContent =
                 'Lower fluoridated water ' +
                 'exposure noted';
         }
 
+        // Question 2 personalization
         if (answers.q2 === 'c') {
-            e2.textContent = 
-                'Frequent mental fog reported';
+            e2.textContent =
+                'Frequent mental fog ' +
+                'and low energy reported';
         } else if (answers.q2 === 'b') {
-            e2.textContent = 
-                'Occasional mental fog reported';
+            e2.textContent =
+                'Occasional mental fog ' +
+                'and focus challenges reported';
         } else {
-            e2.textContent = 
-                'Minimal mental fog reported';
+            e2.textContent =
+                'Minimal cognitive ' +
+                'challenges reported';
         }
 
+        // Question 3 personalization
         if (answers.q3 === 'a') {
-            e3.textContent = 
-                'Active wellness optimization ' +
-                'priority confirmed';
+            e3.textContent =
+                'Active wellness and ' +
+                'mindfulness priority confirmed';
         } else if (answers.q3 === 'b') {
-            e3.textContent = 
-                'Wellness curiosity confirmed';
+            e3.textContent =
+                'Wellness curiosity ' +
+                'and interest confirmed';
         } else {
-            e3.textContent = 
-                'General wellness interest noted';
+            e3.textContent =
+                'General wellness ' +
+                'interest noted';
         }
 
+        // Show results section
         document.getElementById(
             'results'
         ).style.display = 'block';
-        
+
+        // Smooth scroll to results
         document.getElementById(
             'results'
         ).scrollIntoView({
